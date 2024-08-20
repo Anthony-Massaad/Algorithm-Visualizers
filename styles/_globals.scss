@@ -1,0 +1,57 @@
+@import "./reset";
+
+// Variables
+$default_font_size: 16px !default;
+$primary-color: #9900ff; // Primary color for main elements, highlights
+$background-color: #fafafa; // Background color for the main content
+$secondary-color: #8c00e6; // Secondary color for accents and highlights
+$border-color: #dcdcdc; // Border color for input fields, card borders
+$text-color: #333333; // Default text color for readability
+$button-bg-color: $primary-color; // Background color for buttons
+$button-text-color: #ffffff; // Text color for buttons
+$hover-bg-color: #6600cc; // Background color for hover states
+$success-color: #4caf50; // Color for success messages or indicators
+$error-color: #f44336; // Color for error messages or indicators
+$warning-color: #ff9800; // Color for warnings or alerts
+
+// for sorting algorithms
+$bar-color: #4a4a4a; // Default color for bars
+$current-color: #f44336; // Color for the current element
+$swap-color: #4caf50; // Color for swapping elements
+$comparing-color: #4caf50; // Color for comparing elements
+
+// Global css
+html {
+  font-size: $default_font_size;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  font-family: serif, Helvetica, sans-serif !important;
+  position: relative;
+  font-style: normal;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+// Component Imports
+@import "./container";
+@import "./header";
+@import "./dropdown";
+@import "./button";
+
+// page imports
+@import "./pages/sorting";
+@import "./pages/path";
+@import "./pages/home";

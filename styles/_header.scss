@@ -1,0 +1,23 @@
+header {
+  background-color: $primary-color;
+  nav {
+    .container {
+      display: flex;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 0.4rem;
+  background-color: #e2e8f0;
+  color: $text-color;
+  * {
+    vertical-align: middle;
+  }
+}

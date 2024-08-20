@@ -1,0 +1,23 @@
+.btn {
+  cursor: pointer;
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  border: 1px solid $border-color;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    background-color: #dcdcdc;
+    color: #a0a0a0;
+    border: 1px solid #b0b0b0;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,61 @@
+.array-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 300px;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-top: 2rem;
+  z-index: 0;
+  position: relative;
+  height: 25rem;
+
+  .sorting-status {
+    position: absolute;
+    top: 0.2rem;
+    left: 0.5rem;
+    font-size: 0.9rem;
+    pointer-events: none;
+  }
+
+  .timer {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    font-size: 0.9rem;
+    pointer-events: none;
+  }
+
+  .array-bar {
+    width: 50px;
+    background-color: $bar-color;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid $border-color;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    transition: background-color 0.1s ease;
+
+    &.current {
+      background-color: $current-color;
+    }
+
+    &.swap,
+    &.comparing {
+      background-color: $swap-color;
+    }
+
+    .value {
+      position: absolute;
+      top: -1.3rem;
+      font-weight: bold;
+      color: $text-color;
+    }
+  }
+}
